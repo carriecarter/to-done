@@ -1,4 +1,4 @@
-![cf](http://i.imgur.com/7v5ASc8.png) 28: To Done Notes
+Class 26: To Done Notes
 ===
 
 Create a notes app
@@ -35,14 +35,13 @@ App
 
 * The Dashboard Container component should manage the entire **notes application state**
 * The state should contain a notes array
-* It should have a `addNote(note)` method that adds a note to `state.notes`
+* It should have a `addNote(note)` method that calls the server and then adds the id to note, and the note to `state.notes`
   * each note that gets added should have the following data
-    * `id`: always should contain the result of `uuid.v1()` or `shortid.generate()`
     * `completed`: false by default
     * `content`: user provided content
     * `title`: user provided title
-* It should have a bound `removeNote(note)` method that removes a note from `state.notes` based on its `id`
-* It should have a bound `updateNote(note)` method that updates that note in `state.notes` based on its `id`
+* It should have a bound `removeNote(note)` method that removes the note from server, then `state.notes` based on its `id`
+* It should have a bound `updateNote(note)` method that updates that note on server, then in `state.notes` based on its `id`
 * Test: no tests
 
 ### `Dashboard`
