@@ -11,12 +11,11 @@ Create the following components and structure them according to the following di
 App
   Landing
   Dashboard Container
-    NoteForm
-    Dashboard
-        NoteList
-          Note
-            NoteDisplay
-            NoteForm
+      NoteForm
+      NoteList
+        Note
+          NoteDisplay
+          NoteForm
 ```
 
 ## Components
