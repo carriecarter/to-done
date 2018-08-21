@@ -11,8 +11,8 @@ Create the following components and structure them according to the following di
 App
   Landing
   Dashboard Container
+    NoteForm
     Dashboard
-        NoteForm
         NoteList
           Note
             NoteDisplay
