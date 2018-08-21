@@ -40,8 +40,8 @@ App
     * `completed`: false by default
     * `content`: user provided content
     * `title`: user provided title
-* It should have a bound `removeNote(note)` method that removes the note from server, then `state.notes` based on its `id`
 * It should have a bound `updateNote(note)` method that updates that note on server, then in `state.notes` based on its `id`
+* BONUS: It should have a bound `removeNote(note)` method that removes the note from server, then `state.notes` based on its `id`
 * Test: no tests
 
 ### `Dashboard`
@@ -73,7 +73,7 @@ App
 * Has local `state.editing` which defaults to true
 * Has a button to switch to edit mode
 * Conditionally displays either the NoteDisplay or NoteForm based on value of `state.editing`
-* should display a delete button
+* BONUS: should display a delete button
     * `onDelete` the note id should be passed to be removed
 * Test:
     * Snapshot display mode
@@ -91,12 +91,11 @@ Write a description of the project in your README.md
 
 ## Rubric
 
-* Functionaly Correct **4pts** (1pts each)
+* Functionaly Correct **4pts**
     * Display List 
     * Add a Note
     * Edit a Note
-    * Remove a Note
 * Tests **4pts**
-* Idiomatic props, callback props, React components
+* Idiomatic props, callback props, React components **2pts**
 
 
