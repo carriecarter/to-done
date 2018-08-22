@@ -9,7 +9,7 @@ import {
 class DashboardContainer extends Component {
 
   state = {
-    note: null,
+    notes: null,
   };
 
   componentDidMount() {

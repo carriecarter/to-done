@@ -12,7 +12,6 @@ class NoteForm extends Component {
 
   static propTypes = {
     note: PropTypes.object,
-    editing: true,
     onComplete: PropTypes.func.isRequired,
     onCancel: PropTypes.func
   };
