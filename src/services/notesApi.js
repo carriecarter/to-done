@@ -1,9 +1,9 @@
-import { put, post, get, del } from './request';
+import { post, get } from './request';
 
 const URL = 'https://cc-to-done.firebaseio.com/';
 const NOTES_URL = `${URL}/notes`;
 
-const getNotesUrl = key => `${NOTES_URL}/${key}.json`;
+// const getNotesUrl = key => `${NOTES_URL}/${key}.json`;
 
 export const getNotes = () => {
   return get (`${NOTES_URL}.json`)
@@ -27,10 +27,10 @@ export const addNote = (note) => {
     });
 };
 
-export const updateNote = note => {
-  const url = getNoteUrl(note.key);
-  return put(url, note);
-};
+// export const updateNote = note => {
+//   // const url = getNoteUrl(note.key);
+//   return put( note);
+// };
 
 
 
