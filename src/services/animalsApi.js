@@ -18,4 +18,12 @@ export const getAnimals = () => {
     });
 };
 
-export const addAnimal = (animal) =>
+export const addAnimal = (animal) => {
+  const url = `${ANIMALS_URL}.json`;
+  return post(url, animal)
+    .then(res => {
+      animal.key = res.name;
+      return animal;
+    });
+};
+
