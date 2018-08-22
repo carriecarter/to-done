@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import NoteForm from './NoteForm';
 import NoteList from './NoteList';
 import styles from './Note.css';
-import { getNotes, addNote } from '../../services/notesApi';
+import { 
+  getNotes,
+  addNote } from '../../services/notesApi';
 
 class DashboardContainer extends Component {
 

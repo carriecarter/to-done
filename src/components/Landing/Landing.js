@@ -1,9 +1,27 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
+import styles from './Landing.css';
 
 class Landing extends Component {
+
+
+
   render() {
     return (
-      <div>
+      <div className={styles.landing}>
+        <section>
+          <nav>
+            <ul>
+              <li>
+                <NavLink exact activeClassName="active" to="/">Landing</NavLink>
+              </li>
+              <li>
+                <NavLink exact activeClassName="active" to="/dashboard">Dashboard</NavLink>
+              </li>
+              
+            </ul>
+          </nav>
+        </section>
         <h1>To Done</h1>
         <hr></hr>
         <p>
