@@ -7,12 +7,14 @@
 
 h1 {
   font-family: 'Comfortaa', sans-serif;
-  font-size: 20px;
+  font-size: 60px;
   color: rebeccapurple;
+  text-decoration-line: line-through;
 }
 
 p {
   font-family: Helvetica, sans-serif;
-  color: #333;
+  font-size: 20px;
+  color: #FFF;
 }
 
