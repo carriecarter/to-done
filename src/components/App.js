@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import Landing from './Landing/Landing';
-import Dashboard from './Dashboard/Dashboard';
+import DashboardContainer from './Dashboard/DashboardContainer';
 import styles from './App.css';
 
 class App extends Component {
@@ -17,7 +17,7 @@ class App extends Component {
           <main>
             <Switch>
               <Route exact path="/" component={Landing}/>
-              <Route exact path="/dashboard" component={Dashboard}/>
+              <Route exact path="/dashboard" component={DashboardContainer}/>
               <Redirect to="/"/>
             </Switch>
           </main>

@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import Dashboard from './Dashboard';
 import NoteForm from './NoteForm';
 import NoteList from './NoteList';
 import styles from './Note.css';
-import { getNotes } from '../../services/notesApi';
+import { getNotes, addNote } from '../../services/notesApi';
 
 class DashboardContainer extends Component {
 
@@ -17,6 +16,19 @@ class DashboardContainer extends Component {
         this.setState({ notes });
       });
   }
+
+  handleAdd = note => {
+    return addNote(note)
+      .then(added => {
+        this.setState(({ notes }) => {
+          return {
+            notes: [...notes, added]
+          };
+        });
+      });
+  };
+
+
 
 
   render() {
@@ -32,12 +44,16 @@ class DashboardContainer extends Component {
         {notes &&
           <section>
             <h3>Your Notes:</h3>
-            <NoteList
-              notes={notes}
-            />
+            <div className={styles.note}>
+              <NoteList
+                notes={notes}
+              />
+            </div>
           </section>
         }
       </div>
     );
   }
 }
+
+export default DashboardContainer; 
