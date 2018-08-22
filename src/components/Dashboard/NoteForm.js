@@ -30,12 +30,13 @@ class NoteForm extends Component {
       });
   };
 
-  
-
-
+  handleChange = ({ target }) => {
+    this.setState({ [target.title]: target.value });
+  };
 
   render() {
     const { key, title, content } = this.state;
+    const { onCancel } = this.props;
 
     return (
       <form onSubmit={this.handleSubmit}>
